@@ -131,28 +131,28 @@
 
         combo_shift {
             timeout-ms = <50>;
-            layers = <0 1>;
+            layers = <0>;
             key-positions = <5 22>;
             bindings = <&sk LSHFT>;
         };
 
         combo_win {
             timeout-ms = <50>;
-            layers = <0 1>;
+            layers = <0>;
             key-positions = <6 23>;
             bindings = <&sk LGUI>;
         };
 
         combo_alt {
             timeout-ms = <50>;
-            layers = <0 1>;
+            layers = <0>;
             key-positions = <7 24>;
             bindings = <&sk LALT>;
         };
 
         combo_ctrl {
             timeout-ms = <50>;
-            layers = <0 1>;
+            layers = <0>;
             key-positions = <8 25>;
             bindings = <&sk LCTRL>;
         };
@@ -169,20 +169,7 @@
 
             &kp Z       &kp X       &kp C       &kp V       &td_comma           &td_dot     &kp B       &kp M       &kp W       &kp Q
 
-                                                &to 1       &kp BSPC            &kp SPACE   &to 1
-            >;
-        };
-
-        right_layer {
-            bindings = <
-
-            &none       &td_grave   &td_minus   &td_equal   &none               &none       &kp N1      &kp N2      &kp N3      &none
-
-            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none       &kp N4      &kp N5      &kp N6      &none
-
-            &kp BSPC    &none       &none       &none       &none               &none       &kp N7      &kp N8      &kp N9      &SPACE
-
-                                                &trans       &trans             &kp N0      &trans
+                                                &none       &kp BSPC            &kp SPACE   &none
             >;
         };
     };
