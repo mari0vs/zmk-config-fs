@@ -204,11 +204,11 @@
         FN_layer {
             bindings = <
 
-            &none       &kp f1      &kp f1      &kp f3      &kp f4              &none       &kp N1      &kp N2      &kp N3      &none
+            &none       &kp F1      &kp F1      &kp F3      &kp F4              &none       &kp N1      &kp N2      &kp N3      &none
 
-            &none       &kp f5      &kp f6      &kp f7      &kp f8              &none       &kp N4      &kp N5      &kp N6      &none
+            &none       &kp F5      &kp F6      &kp F7      &kp F8              &none       &kp N4      &kp N5      &kp N6      &none
 
-            &none       &kp f9      &kp f10     &kp f11     &kp f12             &none       &kp N7      &kp N8      &kp N9      &kp SPACE
+            &none       &kp F9      &kp F10     &kp F11     &kp F12             &none       &kp N7      &kp N8      &kp N9      &kp SPACE
 
                                                 &trans      &to 0               &none    &trans
 
