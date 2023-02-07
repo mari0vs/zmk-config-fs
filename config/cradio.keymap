@@ -169,7 +169,7 @@
 
             &kp Z       &kp X       &kp C       &kp V       &td_comma           &td_dot     &kp B       &kp M       &kp W       &kp Q
 
-                                                &none       &kp BSPC            &kp SPACE   &none
+                                                &to 0       &kp BSPC            &kp SPACE   &none
             >;
         };
 
