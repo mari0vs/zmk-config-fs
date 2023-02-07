@@ -176,7 +176,7 @@
         NYM_layer {
             bindings = <
 
-            &none       &td_grave   &td_minus   &td_equal   &none               &none       &td_grave   &td_minus   &td_equal   &none
+            &none       &td_grave   &td_minus   &td_equal   &none               &kp N1       &td_grave   &td_minus   &td_equal   &none
 
             &td_bslh    &td_brc     &td_bkt     &td_par     &none               &td_bslh    &td_brc     &td_bkt     &td_par     &none
 
