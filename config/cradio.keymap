@@ -169,7 +169,21 @@
 
             &kp Z       &kp X       &kp C       &kp V       &td_comma           &td_dot     &kp B       &kp M       &kp W       &kp Q
 
-                                                &td_grave   &kp BSPC            &kp SPACE   &none
+                                                &to 1   &kp BSPC            &kp SPACE   &none
+            >;
+        };
+
+        NYM_layer {
+            bindings = <
+
+            &none       &td_grave   &td_minus   &td_equal   &none               &none       &kp N1      &kp N2      &kp N3      &none
+
+            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none       &kp N4      &kp N5      &kp N6      &none
+
+            &kp BSPC    &none       &none       &none       &none               &none       &kp N7      &kp N8      &kp N9      &SPACE
+
+                                                &trans       &to 0               &kp N0      &trans
+
             >;
         };
     };
