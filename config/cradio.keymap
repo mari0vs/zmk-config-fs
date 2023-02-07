@@ -169,20 +169,34 @@
 
             &kp Z       &kp X       &kp C       &kp V       &td_comma           &td_dot     &kp B       &kp M       &kp W       &kp Q
 
-                                                &to 1   &kp BSPC            &kp SPACE   &none
+                                                &to 2   &kp BSPC            &kp SPACE   &to 1
             >;
         };
 
         NYM_layer {
             bindings = <
 
-            &none       &td_grave   &td_minus   &td_equal   &none               &none       &kp N1   &kp N2   &kp N3   &none
+            &none       &td_grave   &td_minus   &td_equal   &none               &none    &kp N1    &kp N2   &kp N3   &none
 
-            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none    &kp N4     &kp N5     &kp N6     &none
+            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none    &kp N4    &kp N5   &kp N6   &none
 
-            &kp BSPC    &none       &none       &none       &none               &none    &kp N7       &kp N8       &kp N9       &kp SPACE
+            &kp BSPC    &none       &none       &none       &none               &none    &kp N7    &kp N8   &kp N9   &kp SPACE
 
-                                                &to 0   &kp BSPC            &kp N0   &none
+                                                &trans   &to 0            &kp N0   &none
+
+            >;
+        };
+
+        NAV_layer {
+            bindings = <
+
+            &none       &none       &none       &none       &none               &kp CAPS    &kp HOME    &kp PG_DOWN &kp PG_UP   &kp END
+
+            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp RALT            &kp INS     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+
+            &none       &none       &none       &none       &none               &none       &none       &none       &none       &none
+
+                                                &trans      &to 0               &trans      &trans
 
             >;
         };
