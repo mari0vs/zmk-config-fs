@@ -182,7 +182,7 @@
 
             &kp BSPC    &none       &none       &none       &none               &none    &kp N7    &kp N8   &kp N9   &kp SPACE
 
-                                                &trans      &to 0               &kp N0   &to 3
+                                                &trans      &to 0               &trans   &to 3
 
             >;
         };
@@ -204,13 +204,13 @@
         FN_layer {
             bindings = <
 
-            &none       &td_grave   &td_minus   &td_equal   &none               &none    &kp N1    &kp N2   &kp N3   &none
+            &td_rsbl    &kp f1      &kp f2      &kp f3      &kp f4          &bt BT_CLR  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &td_rsbl
 
-            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none    &kp N4    &kp N5   &kp N6   &none
+            &kp PSCRN   &kp f5      &kp f6      &kp f7      &kp f8          &kp C_VOL_UP    &kp LCTRL   &kp LALT    &kp LGUI    &kp LSHFT
 
-            &kp BSPC    &none       &none       &none       &none               &none    &kp N7    &kp N8   &kp N9   &kp SPACE
+        &out OUT_TOG    &kp f9      &kp f10     &kp f11     &kp f12         &kp C_VOL_DOWN  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_MUTE
 
-                                                &trans      &to 0               &kp N0   &trans
+                                                &trans      &to 0               &none   &trans
 
             >;
         };
