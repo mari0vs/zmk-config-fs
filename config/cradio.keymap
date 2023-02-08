@@ -176,13 +176,13 @@
         NAV_layer {
             bindings = <
 
-            &none       &none       &none       &none       &none               &kp CAPS    &kp HOME    &kp PG_DN   &kp PG_UP  &kp END
+            &none       &none       &none       &none       &none               &kp CAPS    &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
 
-            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp RALT            &kp INS     &kp LEFT    &kp DOWN    &kp UP     &kp RIGHT
+            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp RALT            &kp INS     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
 
-            &kp BSPC    &none       &none       &none       &none               &none       &none       &none       &none      &none
+            &kp BSPC    &none       &none       &none       &none               &none       &none       &none       &none       &none
 
-                                                &trans      &to 0               &trans   &to 3
+                                                &trans      &to 0               &trans      &to 3
 
             >;
         };
@@ -190,11 +190,11 @@
         NYM_layer {
             bindings = <
 
-            &none       &td_grave   &td_minus   &td_equal   &none               &none       &kp N1      &kp N2      &kp N3    &none
+            &none       &td_grave   &td_minus   &td_equal   &none               &none       &kp N1      &kp N2      &kp N3      &none
 
-            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none       &kp N4      &kp N5      &kp N6    &none
+            &td_bslh    &td_brc     &td_bkt     &td_par     &none               &none       &kp N4      &kp N5      &kp N6      &none
 
-            &kp BSPC    &none       &none       &none       &none               &none       &kp N7      &kp N8      &kp N9    &kp SPACE
+            &kp BSPC    &none       &none       &none       &none               &none       &kp N7      &kp N8      &kp N9      &kp SPACE
 
                                                 &to 3       &to 0               &kp N0      &trans
 
@@ -204,11 +204,11 @@
         FN_layer {
             bindings = <
 
-            &none       &kp F1      &kp F1      &kp F3      &kp F4              &none       &kp N1      &kp N2      &kp N3      &none
+            &none       &kp F1      &kp F1      &kp F3      &kp F4              &none       &none       &none       &none       &none
 
-            &none       &kp F5      &kp F6      &kp F7      &kp F8              &none       &kp N4      &kp N5      &kp N6      &none
+            &none       &kp F5      &kp F6      &kp F7      &kp F8              &none       &kp LCTRL   &kp LALT    &kp LGUI    &kp SHFT
 
-            &none       &kp F9      &kp F10     &kp F11     &kp F12             &none       &kp N7      &kp N8      &kp N9      &kp SPACE
+            &none       &kp F9      &kp F10     &kp F11     &kp F12             &none       &none       &none       &none       &kp C_MUTE
 
                                                 &trans      &to 0               &none    &trans
 
