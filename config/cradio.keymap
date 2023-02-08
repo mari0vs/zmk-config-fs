@@ -12,7 +12,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_comma";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp COMMA>, <&kp SEMI>;
         };
 
@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_dot";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp DOT>, <&kp COLON>;
         };
 
@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_grave";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_minus";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp MINUS>, <&kp UNDER>;
         };
 
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_equal";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
 
@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_bslh";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp BSLH>, <&kp PIPE>;
         };
 
@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_brc";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
 
@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_bkt";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_par";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
 
@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_rebl";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&reset>, <&bootloader>;
         };
     };
@@ -92,58 +92,58 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0>;
             key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
 
         combo_del {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0>;
-            key-positions = <18 19>;
+            key-positions = <4 5>;
             bindings = <&kp ESC>;
         };
 
         combo_enter {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0>;
-            key-positions = <19 20>;
+            key-positions = <6 7>;
             bindings = <&kp RET>;
         };
 
         combo_shift {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0 1>;
-            key-positions = <5 22>;
+            key-positions = <8 9>;
             bindings = <&sk LSHFT>;
         };
 
         combo_win {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0 1>;
-            key-positions = <6 23>;
+            key-positions = <10 11>;
             bindings = <&sk LGUI>;
         };
 
         combo_alt {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0 1>;
-            key-positions = <7 24>;
+            key-positions = <30 31>;
             bindings = <&sk LALT>;
         };
 
         combo_ctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             layers = <0 1>;
-            key-positions = <8 25>;
+            key-positions = <32 33>;
             bindings = <&sk LCTRL>;
         };
     };
@@ -153,11 +153,11 @@
         default_layer {
             bindings = <
 
-            &kp P       &kp Y       &kp F       &kp G       &kp U               &kp R       &kp H       &kp J       &kp K       &kp L
+            &kp P       &kp Y       &kp F       &kp G       &td_comma           &td_dot     &kp H       &kp J       &kp K       &kp L
 
-            &kp A       &kp O       &kp I       &kp E       &td_comma           &td_dot     &kp T       &kp N       &kp D       &kp S
+            &kp A       &kp O       &kp I       &kp E       &kp U               &kp R       &kp T       &kp N       &kp D       &kp S
 
-            &kp Z       &kp X       &kp C       &kp V       &kp SQT             &kp FSLH     &kp B       &kp M       &kp W       &kp Q
+            &kp Z       &kp X       &kp C       &kp V       &kp SQT             &kp FSLH    &kp B       &kp M       &kp W       &kp Q
 
                                                 &to 1       &kp BSPC            &kp SPACE   &to 2
             >;
@@ -176,7 +176,6 @@
 
             >;
         };
-
         NAV_layer {
             bindings = <
 
