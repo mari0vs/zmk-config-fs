@@ -153,7 +153,7 @@
         default_layer {
             bindings = <
 
-            &kp P       &kp Y       &kp F       &kp G       &kp FSLH            &kp SQT     &kp H       &kp J       &kp K       &kp L
+            &kp P       &kp Y       &kp F       &kp G       &kp SQT             &kp FSLH     &kp H       &kp J       &kp K       &kp L
 
             &kp A       &kp O       &kp I       &kp E       &kp U               &kp R       &kp T       &kp N       &kp D       &kp S
 
