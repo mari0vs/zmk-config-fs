@@ -172,7 +172,7 @@
 
             &kp BSPC    &none       &none       &none       &none               &none       &none       &none       &none       &none
 
-                                                &trans      &to 0               &trans      &to 3
+                                                &trans      &to 0               &to 0       &to 3
 
             >;
         };
@@ -200,7 +200,7 @@
 
          &out OUT_TOG   &kp F9      &kp F10     &kp F11     &kp F12           &kp C_VOL_DN  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_MUTE
 
-                                                &trans      &to 0               &none       &trans
+                                                &trans      &to 0             &to 0         &trans
 
             >;
         };
