@@ -205,7 +205,7 @@
         FN_layer {
             bindings = <
 
-            &td_rsbl    &kp F1      &kp F1      &kp F3      &kp F4              &none       &none       &none       &none       &td_rsbl
+            &td_rsbl    &kp F1      &kp F1      &kp F3      &kp F4            &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &td_rsbl
 
             &kp PSCRN   &kp F5      &kp F6      &kp F7      &kp F8              &none       &kp LCTRL   &kp LALT    &kp LGUI    &kp LSHFT
 
