@@ -6,9 +6,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-//&sk {
-//    release-after-ms = <10000>;
-//};
+&sk {
+    release-after-ms = <10000>;
+};
 
 / {
     behaviors {
@@ -147,7 +147,7 @@
         combo_ctrl {
             timeout-ms = <80>;
             layers = <0 1>;
-            key-positions = <13 16\>;
+            key-positions = <13 16>;
             bindings = <&sk LCTRL>;
         };
     };
