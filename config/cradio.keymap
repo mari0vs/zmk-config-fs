@@ -29,6 +29,78 @@
             tapping-term-ms = <200>;
             bindings = <&kp COMMA>, <&kp SEMI>;
         };
+
+        td_dot: tap_dance_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_dot";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp DOT>, <&kp COLON>;
+        };
+
+        td_grave: tap_dance_grave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_grave";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+        };
+
+        td_minus: tap_dance_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_minus";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+        };
+
+        td_equal: tap_dance_equal {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_equal";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+        };
+
+        td_bslh: tap_dance_bslh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_bslh";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BSLH>, <&kp PIPE>;
+        };
+
+        td_brc: tap_dance_brc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_brc";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBRC>, <&kp RBRC>;
+        };
+
+        td_bkt: tap_dance_bkt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_bkt";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
+        };
+
+        td_par: tap_dance_par {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_par";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
+        };
+
+        td_rsbl: tap_dance_rsbl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_rebl";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&reset>, <&bootloader>;
+        };
     };
 
     combos {
