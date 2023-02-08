@@ -121,28 +121,28 @@
 
         combo_shift {
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 2>;
             key-positions = <5 22>;
             bindings = <&sk LSHFT>;
         };
 
         combo_win {
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 2>;
             key-positions = <6 23>;
             bindings = <&sk LGUI>;
         };
 
         combo_alt {
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 2>;
             key-positions = <7 24>;
             bindings = <&sk LALT>;
         };
 
         combo_ctrl {
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 2>;
             key-positions = <8 25>;
             bindings = <&sk LCTRL>;
         };
