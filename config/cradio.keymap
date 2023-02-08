@@ -10,24 +10,6 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 / {
-    behaviors {
-        td_comma: tap_dance_comma {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_comma";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
