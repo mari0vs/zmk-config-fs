@@ -21,6 +21,14 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
+        td_comma: tap_dance_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_comma";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+        };
     };
 
     keymap {
