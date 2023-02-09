@@ -96,56 +96,56 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0>;
             key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
 
         combo_enter {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0>;
             key-positions = <6 7>;
             bindings = <&kp RET>;
         };
 
         combo_del {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
 
         combo_shift {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0 1>;
             key-positions = <10 19>;
             bindings = <&sk LSHFT>;
         };
 
         combo_win {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0 1>;
             key-positions = <11 18>;
             bindings = <&sk LGUI>;
         };
 
         combo_alt {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0 1>;
             key-positions = <12 17>;
             bindings = <&sk LALT>;
         };
 
         combo_ctrl {
-            timeout-ms = <80>;
+            timeout-ms = <60>;
             layers = <0 1>;
             key-positions = <13 16>;
             bindings = <&sk LCTRL>;
