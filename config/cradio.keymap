@@ -12,15 +12,26 @@
 
 / {
     behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
+        lt: layer_tap {
+            label = "layer_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
+
+        hm: homerow_mods {
+            label = "homerow_mods";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <150>;
             bindings = <&sk>, <&kp>;
         };
+
         td_comma: tap_dance_comma {
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_comma";
@@ -133,6 +144,14 @@
         };
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -140,11 +159,11 @@
 
             &kp P       &kp Y       &kp F       &kp G       &td_comma           &td_dot     &kp H       &kp J       &kp K       &kp L
 
-            &ht LSHFT A &ht LGUI O  &ht LALT I  &ht LCTRL E &kp U               &kp R       &ht LCTRL T &ht LALT N  &ht LGUI D  &ht LSHFT S
+            &hm LSHFT A &hm LGUI O  &hm LALT I  &hm LCTRL E &kp U               &kp R       &hm LCTRL T &hm LALT N  &hm LGUI D  &hm LSHFT S
 
             &kp Z       &kp X       &kp C       &kp V       &kp SQT             &kp FSLH    &kp B       &kp M       &kp W       &kp Q
 
-                                                &to 1       &kp BSPC            &kp SPACE   &to 2
+                                                &to 1       &lt 1 BSPC          &lt 2 SPACE &to 2
             >;
         };
 
@@ -152,12 +171,12 @@
             bindings = <
 
             &none       &kp N1      &kp N2      &kp N3      &none               &none       &td_grave   &td_minus   &td_equal   &none
-    
-            &kp N0      &kp N4      &kp N5      &kp N6      &none               &none       &td_par     &td_bkt     &td_brc     &td_bslh
+
+            &hm LSHFT N0 &hm LGUI N4  &hm LALT N5  &hm LCTRL N6 &kp U           &kp R &hm LCTRL td_par &hm LALT td_bkt &hm LGUI td_brc &hm LSHFT td_bslh
     
             &none       &kp N7      &kp N8      &kp N9      &kp BSPC            &kp SPACE   &none       &none       &none       &none
 
-                                                &trans      &to 0               &to 0       &to 3
+                                                &to 0       &trans              &trans      &to 0 
 
             >;
         };
@@ -170,7 +189,7 @@
 
             &none       &none       &none       &none       &kp BSPC            &kp SPACE   &none       &none       &none       &none
 
-                                                &to 3       &to 0               &to 0       &trans
+                                                &to 0       &trans               &trans       &to 0 
 
             >;
         };
@@ -184,7 +203,7 @@
 
          &out OUT_USB   &kp F9      &kp F10     &kp F11     &kp F12           &kp C_VOL_DN  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_MUTE
 
-                                                &trans      &to 0             &to 0         &trans
+                                                &to 0       &trans             &trans         &to 0 
 
             >;
         };
