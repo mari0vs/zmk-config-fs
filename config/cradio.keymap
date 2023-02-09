@@ -12,8 +12,9 @@
 
 / {
     behaviors {
-        lt: layer_tap {
-            label = "layer_tap";
+
+        lo: layer_mo {
+            label = "layer_mo";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
@@ -163,7 +164,7 @@
 
             &kp Z       &kp X       &kp C       &kp V       &kp SQT             &kp FSLH    &kp B       &kp M       &kp W       &kp Q
 
-                                                &to 1       &lt 1 BSPC          &lt 2 SPACE &to 2
+                                                &to 1       &lo 1 BSPC          &lo 2 SPACE &to 2
             >;
         };
 
