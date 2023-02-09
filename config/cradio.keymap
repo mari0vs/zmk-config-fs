@@ -12,6 +12,15 @@
 
 / {
     behaviors {
+        ht: hold_tap {
+            label = "hold_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&sk>, <&kp>;
+        };
         td_comma: tap_dance_comma {
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_comma";
@@ -122,34 +131,6 @@
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
-
-        combo_shift {
-            timeout-ms = <60>;
-            layers = <0 1>;
-            key-positions = <10 19>;
-            bindings = <&sk LSHFT>;
-        };
-
-        combo_win {
-            timeout-ms = <60>;
-            layers = <0 1>;
-            key-positions = <11 18>;
-            bindings = <&sk LGUI>;
-        };
-
-        combo_alt {
-            timeout-ms = <60>;
-            layers = <0 1>;
-            key-positions = <12 17>;
-            bindings = <&sk LALT>;
-        };
-
-        combo_ctrl {
-            timeout-ms = <60>;
-            layers = <0 1>;
-            key-positions = <13 16>;
-            bindings = <&sk LCTRL>;
-        };
     };
 
     keymap {
@@ -159,7 +140,7 @@
 
             &kp P       &kp Y       &kp F       &kp G       &td_comma           &td_dot     &kp H       &kp J       &kp K       &kp L
 
-            &kp A       &kp O       &kp I       &kp E       &kp U               &kp R       &kp T       &kp N       &kp D       &kp S
+            &ht LSHFT A &ht LGUI O  &ht LALT I  &ht LCTRL E &kp U               &kp R       &ht LCTRL T &ht LALT N  &ht LGUI D  &ht LSHFT S
 
             &kp Z       &kp X       &kp C       &kp V       &kp SQT             &kp FSLH    &kp B       &kp M       &kp W       &kp Q
 
