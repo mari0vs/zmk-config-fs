@@ -19,7 +19,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <500>;
             bindings = <&mo>, <&kp>;
         };
@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
             quick-tap-ms = <500>;
             bindings = <&sk>, <&kp>;
         };
@@ -119,28 +119,28 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <60>;
-            layers = <0>;
+            layers = <0 1 2>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
             timeout-ms = <60>;
-            layers = <0>;
+            layers = <0 1 2>;
             key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
 
         combo_enter {
             timeout-ms = <60>;
-            layers = <0>;
+            layers = <0 1 2>;
             key-positions = <6 7>;
             bindings = <&kp RET>;
         };
 
         combo_del {
             timeout-ms = <60>;
-            layers = <0>;
+            layers = <0 1 2>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
@@ -187,7 +187,7 @@
 
             &none       &none       &none       &none       &none               &kp CAPS    &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
 
-            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp RALT            &kp INS     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp RALT            &kp PSCRN   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
 
             &none       &none       &none       &none       &none               &none       &none       &none       &none       &none
 
