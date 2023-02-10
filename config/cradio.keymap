@@ -119,28 +119,28 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <60>;
-            layers = <0 1 2>;
+            layers = <0>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
             timeout-ms = <60>;
-            layers = <0 1 2>;
+            layers = <0>;
             key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
 
         combo_enter {
             timeout-ms = <60>;
-            layers = <0 1 2>;
+            layers = <0>;
             key-positions = <6 7>;
             bindings = <&kp RET>;
         };
 
         combo_del {
             timeout-ms = <60>;
-            layers = <0 1 2>;
+            layers = <0>;
             key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
