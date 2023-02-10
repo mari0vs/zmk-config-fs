@@ -161,9 +161,9 @@
 
             &kp Z       &kp Y       &kp F       &kp P       &td_comma           &td_dot     &kp B       &kp M       &kp W       &kp Q
 
-            &hm LSHFT A &hm LGUI R  &hm LALT S  &hm LCTRL T &kp G               &kp U       &hm LCTRL N &hm LALT E  &hm LGUI I  &hm LSHFT O
+            &hm LSHFT O &hm LGUI A  &hm LALT I  &hm LCTRL E &kp U               &kp G       &hm LCTRL T &hm LALT N  &hm LGUI D  &hm LSHFT S
 
-            &kp X       &kp C       &kp V       &kp D       &kp SQT             &kp FSLH    &kp H       &kp J       &kp K       &kp L
+            &kp X       &kp C       &kp V       &kp G       &kp SQT             &kp FSLH    &kp H       &kp J       &kp K       &kp L
 
                                                 &kp Z       &lo 1 BSPC          &lo 2 SPACE &kp Q
             >;
