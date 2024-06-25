@@ -122,11 +122,11 @@
         default_layer {
             bindings = <
 
-            &kp P       &kp Y       &kp F       &kp G       &kp SQT             &kp FSLH    &kp H       &kp J       &kp K       &kp L
+            &kp B       &kp Y       &kp O       &kp U       &td_comma           &td_dot     &kp L       &kp D       &kp W       &kp V
 
-            &hm LGUI A  &hm LALT O  &hm LCTRL I &hm LSHFT E &kp U               &kp R       &hm LSHFT T &hm LCTRL N &hm LALT D  &hm LGUI S
+            &hm LGUI C  &hm LALT I  &hm LCTRL E &hm LSHFT A &kp Z               &kp Q       &hm LSHFT H &hm LCTRL T &hm LALT S  &hm LGUI N
 
-            &kp Z       &kp X       &kp C       &kp V       &td_comma           &td_dot     &kp B       &kp M       &kp W       &kp Q
+            &kp G       &kp X       &kp J       &kp K       &kp SQT             &kp FSLH    &kp R       &kp M       &kp F       &kp P
 
                                                 &lo 3 TAB   &lo 1 BSPC          &lo 2 SPACE &lo 4 RET
             >;
@@ -163,11 +163,11 @@
         NAV_layer {
             bindings = <
 
-            &none       &none       &none       &none       &none               &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+            &none       &none       &none       &none       &none               &none       &kp HOME    &kp UP      &kp END     &kp DEL
 
-            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp CAPS            &kp DEL     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+            &kp LSHFT   &kp LGUI    &kp LALT    &kp LCTRL   &kp CAPS            &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp PG_UP
 
-            &none       &none       &none       &none       &none               &none       &none       &none       &none       &none
+            &none       &none       &none       &none       &none               &none       &none       &none       &none       &kp PG_DN
 
                                                 &trans      &trans              &trans      &trans
 
